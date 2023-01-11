@@ -1,0 +1,62 @@
+#game{
+    width:600px;
+    height:300px;
+    border: 2px solid blue;
+    margin:auto;
+    background-image:url("https://media.istockphoto.com/id/1016623394/vector/green-glade-against-the-background-of-mountains.jpg?s=612x612&w=0&k=20&c=rvsvG17YoZi7qIO2-Cya6LbfNoYggwq_au3Lqn3iLCw=");
+    background-size:cover;
+}
+#score{
+    text-align: center;
+}
+#kangaroo{
+    width:110px;
+    height:80px;
+    background-image:url(img/newKang.png);
+    position: relative;
+    background-size: cover;
+    top: 220px;
+}
+.hopping{
+    animation: hopping 0.5s linear;
+}
+@keyframes hopping{
+    0%{
+       top:220px;
+    }
+    30%{
+        top:140px;
+    }
+    50%{
+        top:110px;
+    }
+    80%{
+        top:140px;
+    }
+    100%{
+        top:220px;
+    }
+}
+#rock {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 175px;
+    left: 550px;
+  
+    background-image: url(img/newRock.png);
+    background-size: cover;
+  
+    animation: rock 1.3s infinite linear;
+}
+@keyframes rock{
+    0%{
+        left: 550px;
+    }
+    100%{
+        left:-50px;
+    }
+}
+#score{
+    text-align: center;
+}
